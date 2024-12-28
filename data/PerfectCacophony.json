@@ -1,0 +1,24 @@
+{
+    "id": 1,
+    "name": "Perfect Cacophony",
+    "author": "Sister Location Super Custom Night",
+    "creators": ["astaceres"],
+    "verifier": "Brodude5747",
+    "verification": "https://www.youtube.com/watch?v=63aUxsCr7xw",
+    "percentToQualify": 0,
+    "password": "",
+    "records": [
+        {
+            "user": "Brodude5747",
+            "link": "https://www.youtube.com/watch?v=63aUxsCr7xw",
+            "percent": 100,
+            "hz": 0
+        },
+        {
+            "user": "kookii",
+            "link": "https://www.youtube.com/watch?v=YVFSuwrGmC0",
+            "percent": 100,
+            "hz": 0
+        }
+    ]
+}
