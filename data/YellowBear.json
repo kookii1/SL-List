@@ -1,0 +1,17 @@
+{
+    "name": "Yellow Bear",
+    "game": "Sister Location: Classic",
+    "creators": ["dsa"],
+    "verifier": "Bluey lewis",
+    "verification": "https://www.youtube.com/watch?v=SVKAgx5Bky8&t",
+    "length": "bbbbbb Minutes",
+    "points": 100,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "Bluey lewis",
+            "link": "https://www.youtube.com/watch?v=SVKAgx5Bky8&t",
+            "date": ""
+        }
+    ]
+}

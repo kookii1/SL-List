@@ -3,7 +3,7 @@ import { round, score } from './score.js';
 /**
  * Path to directory containing `_list.json` and all levels
  */
-const dir = '../data';
+const dir = '/data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
@@ -70,7 +70,7 @@ export async function fetchLeaderboard() {
         verified.push({
             rank: rank + 1,
             level: level.name,
-            score: score(rank + 1, 100, level.percentToQualify),
+            score: level.points,
             link: level.verification,
         });
 
@@ -84,24 +84,23 @@ export async function fetchLeaderboard() {
                 completed: [],
                 progressed: [],
             };
-            const { completed, progressed } = scoreMap[user];
-            if (record.percent === 100) {
-                completed.push({
-                    rank: rank + 1,
-                    level: level.name,
-                    score: score(rank + 1, 100, level.percentToQualify),
-                    link: record.link,
-                });
-                return;
-            }
-
-            progressed.push({
-                rank: rank + 1,
-                level: level.name,
-                percent: record.percent,
-                score: score(rank + 1, record.percent, level.percentToQualify),
-                link: record.link,
+            const { completed } = scoreMap[user];
+            
+            // Break record and verification ambiguity
+            console.log(scoreMap[user]);
+            verified.forEach((recordVerified) => {
+                if(level.name !== recordVerified.level) {
+                    completed.push({
+                        rank: rank + 1,
+                        level: level.name,
+                        score: level.points,
+                        link: record.link,
+                    });
+                }
             });
+
+            
+            return;
         });
     });
 

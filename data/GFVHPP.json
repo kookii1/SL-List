@@ -1,0 +1,17 @@
+{
+    "name": "Golden Freddy V. Hard v1.11",
+    "game": "Five Nights at Freddy's: Sister Location",
+    "creators": ["Scott Cawthon"],
+    "verifier": "ZombieGabriel",
+    "verification": "https://www.youtube.com/watch?v=Dr9zgVwosHg",
+    "length": "6 Minutes",
+    "points": 300,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "ZombieGabriel",
+            "link": "https://www.youtube.com/watch?v=Dr9zgVwosHg",
+            "date": "06-09-2024"
+        }
+    ]
+}

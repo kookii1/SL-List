@@ -1,0 +1,17 @@
+{
+    "name": "Private Room",
+    "game": "Five Nights at Freddy's: Sister Location",
+    "creators": ["Scott Cawthon"],
+    "verifier": "SwingPoynt",
+    "verification": "https://www.youtube.com/watch?v=M-XZw-qjxAI",
+    "length": "ggfd Minutes",
+    "points": 25,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "SwingPoynt",
+            "link": "https://www.youtube.com/watch?v=M-XZw-qjxAI",
+            "date": ""
+        }
+    ]
+}

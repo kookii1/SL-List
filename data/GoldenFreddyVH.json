@@ -1,0 +1,17 @@
+{
+    "name": "Golden Freddy V. Hard",
+    "game": "Five Nights at Freddy's: Sister Location",
+    "creators": ["Scott Cawthon"],
+    "verifier": "HippoZilla",
+    "verification": "https://www.youtube.com/watch?v=8_grWh1MMvw&t",
+    "length": "6 Minutes",
+    "points": 50,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "HippoZilla",
+            "link": "https://www.youtube.com/watch?v=8_grWh1MMvw&t",
+            "date": ""
+        }
+    ]
+}

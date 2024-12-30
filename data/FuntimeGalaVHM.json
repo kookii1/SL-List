@@ -1,0 +1,17 @@
+{
+    "name": "Funtime Gala Very Hard Mode",
+    "game": "FNaF SL CN",
+    "creators": ["Shooter25"],
+    "verifier": "Kam",
+    "verification": "https://www.youtube.com/watch?v=FnW2gaOQLp4",
+    "length": "6 Minutes",
+    "points": 500,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "Kam",
+            "link": "https://www.youtube.com/watch?v=FnW2gaOQLp4&t",
+            "date": ""
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Funtime Finale Easy",
+    "game": "FNaF: SL CN Extended Cast",
+    "creators": ["SpawnRusher"],
+    "verifier": "ProPG",
+    "verification": "https://www.youtube.com/watch?v=Z0-k6EMzEKc",
+    "length": "6 Minutes",
+    "points": 50,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "ProPGOfficial",
+            "link": "https://www.youtube.com/watch?v=Z0-k6EMzEKc",
+            "date": ""
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Funtime Finale",
+    "game": " FNaF: SL CN Extended Cast",
+    "creators": ["SpawnRusher"],
+    "verifier": "SicK",
+    "verification": "https://www.youtube.com/watch?v=sjyIz8u-czM&t",
+    "length": "6 Minutes",
+    "points": 200,
+    "acceptRecords": true,
+    "records": [
+        {
+            "user": "SicK",
+            "link": "https://www.youtube.com/watch?v=sjyIz8u-czM",
+            "date": ""
+        }
+    ]
+}
