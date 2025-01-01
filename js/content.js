@@ -58,14 +58,14 @@ export async function fetchLeaderboard() {
         }
 
         // Verification
-        const verifier = Object.keys(scoreMap).find(
-            (u) => u.toLowerCase() === level.verifier.toLowerCase(),
-        ) || level.verifier;
+        const verifier = Object.keys(scoreMap).find((u) => u.toLowerCase() === level.verifier.toLowerCase(),) || level.verifier;
+
         scoreMap[verifier] ??= {
             verified: [],
             completed: [],
             progressed: [],
         };
+
         const { verified } = scoreMap[verifier];
         verified.push({
             rank: rank + 1,
@@ -76,30 +76,37 @@ export async function fetchLeaderboard() {
 
         // Records
         level.records.forEach((record) => {
-            const user = Object.keys(scoreMap).find(
-                (u) => u.toLowerCase() === record.user.toLowerCase(),
-            ) || record.user;
+            const user = Object.keys(scoreMap).find((u) => u.toLowerCase() === record.user.toLowerCase(),) || record.user;
+
             scoreMap[user] ??= {
                 verified: [],
                 completed: [],
                 progressed: [],
             };
-            const { completed } = scoreMap[user];
-            
-            // Break record and verification ambiguity
-            console.log(scoreMap[user]);
-            verified.forEach((recordVerified) => {
-                if(level.name !== recordVerified.level) {
-                    completed.push({
-                        rank: rank + 1,
-                        level: level.name,
-                        score: level.points,
-                        link: record.link,
-                    });
-                }
-            });
 
-            
+            const { completed } = scoreMap[user];
+
+            if (scoreMap[user].verified.forEach((v) => v.level !== level.name)) {
+
+                console.log(scoreMap[user].verified);
+
+                completed.push({
+                    rank: rank + 1,
+                    level: level.name,
+                    score: level.points,
+                    link: record.link,
+                });
+            }
+
+            // Break record and verification ambiguity
+            /*console.log(scoreMap[user]);
+            verified.forEach((recordVerified) => {
+                if (level.name !== recordVerified.level) {
+                    
+                }
+            });*/
+
+
             return;
         });
     });
